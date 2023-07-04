@@ -1,0 +1,70 @@
+@use '../globales/mixins' as m;
+.container-categorias{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    overflow: hidden;   
+
+
+}
+.categoria{
+    position: relative;
+    &:hover{
+        cursor: pointer;
+
+    }
+}
+
+.icon-categoria{
+    width: 16px;
+
+    position: relative;
+    z-index: 100;
+    @include m.tablet{
+        width: 32px;
+
+    }
+}
+
+.nombre-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+ 
+    transition: .5s all ease-in-out;
+    background-color: rgba(0, 0, 0, 0.582);
+    margin: .5rem 0;
+    .categoria-nombre{
+        color: white;
+        font-size: .7rem;
+
+     
+        
+        @include m.tablet{
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            
+
+        }
+    }
+}
+.categoria:is(:hover) .nombre-button{
+    transform: translateY(-100%); 
+
+}
+.categoria-img{
+
+    max-height: 350px; 
+    overflow: hidden;   
+
+    filter: brightness(.5);
+
+    img{
+        object-fit: contain;
+    }
+
+    
+}

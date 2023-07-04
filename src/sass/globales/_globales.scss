@@ -1,0 +1,26 @@
+
+:root{
+    --black: rgb(14, 14, 14);
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+        body{
+         
+                font-family: 'Staatliches', sans-serif;
+           
+        background-color: var(--black);
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        ::after ::before{
+            margin: 0;
+        }
+    }
+
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}

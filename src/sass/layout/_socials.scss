@@ -1,0 +1,66 @@
+@use '../globales/mixins' as m;
+.socials{
+    padding: 0rem 0 ;
+    overflow: hidden;
+}
+
+.socials-images-text{
+   
+  .socials-fila{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  
+
+     
+
+
+    .container-socials-text{
+     
+        color: white;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            font-weight: 800;
+            margin: 0;
+        }
+
+    }
+  }
+  
+}
+
+.social-image{
+    position: relative;
+    img{
+        object-fit: cover;
+    }
+    
+       
+}
+.social-image:is(:hover) .social-panel{
+    transform: translateY(0%);
+    transition: all .8s ease-in-out;
+
+}
+
+.social-panel{
+    display: grid;
+    place-items: center;
+    background-color: rgba(22, 22, 22, 0.692);
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    transform: translateY(100%);
+    p{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
