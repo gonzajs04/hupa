@@ -7,7 +7,7 @@ export default function Trabaja(){
     }
     return(
         <section className="trabaja">
-                <p>Envia tu CV</p>
+                <p>- Envia tu CV -</p>
         <h2>¿Deseas trabajar para HUPA?</h2>
     
         <LinkButton onClick={handleEnviarMail}>Enviar mail</LinkButton>

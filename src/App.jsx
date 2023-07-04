@@ -8,6 +8,7 @@ const Nosotros = lazy(()=>import('./Components/Nosotros'))
 const Opiniones = lazy(()=>import('./Components/Opiniones'))
 const Socials = lazy(()=>import('./Components/Socials'))
 const Trabaja = lazy(()=>import('./Components/Trabaja'))
+const Footer = lazy(()=>import('./Components/Footer'))
 
 import persona from './images/persona.jpg'
 export default function App(){
@@ -46,6 +47,8 @@ return(
         <Socials/>
 
         <Trabaja/>
+
+        <Footer/>
 
 
      
