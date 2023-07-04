@@ -1,4 +1,5 @@
 import { useState,lazy,Suspense } from 'react';
+
 import Header from './Components/Header'
 import {generarKey} from './helpers/app.js';
 const Categorias  = lazy(()=>import('./Components/Categorias')) //Lazy loading menu
@@ -6,6 +7,7 @@ const Sucursales  = lazy(()=>import('./Components/Sucursales')) //Lazy loading m
 const Nosotros = lazy(()=>import('./Components/Nosotros'))
 const Opiniones = lazy(()=>import('./Components/Opiniones'))
 const Socials = lazy(()=>import('./Components/Socials'))
+const Trabaja = lazy(()=>import('./Components/Trabaja'))
 
 import persona from './images/persona.jpg'
 export default function App(){
@@ -42,6 +44,8 @@ return(
             dataPersonas= {dataPersonas}
         />
         <Socials/>
+
+        <Trabaja/>
 
 
      

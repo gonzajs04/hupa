@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'; //DEPENDENCIA npm i styled-components
 export const LinkButton = styled.a`
             text-decoration: none;
             color: rgba(255, 255, 255, 0.774);
@@ -11,6 +11,7 @@ export const LinkButton = styled.a`
             &:hover{
                 background-color: white;
                 color: black;
+                cursor:pointer;
             }
             @media(min-width:768px){
                 font-size: .9rem;
