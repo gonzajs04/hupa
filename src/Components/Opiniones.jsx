@@ -1,5 +1,6 @@
 
 import burgericon from '../images/icons/burgericon.png'
+import burgericonw from '../images/compressed/burgericonw.webp'
 export default function Opiniones({ dataPersonas }) {
     return (
         <section className="opiniones">
@@ -15,14 +16,16 @@ export default function Opiniones({ dataPersonas }) {
 
                 {Object.keys(dataPersonas).length > 0 && dataPersonas.map(persona => (
 
-                    <div className="opinion"> {/*HACER OBJETO DE PERSONAS PARA MOSTRAR MULTIPLES OPINIONES Y COLOCAR SVG DE ESTRELLAS*/}
+                    <div className="opinion" key={persona.id}> {/*HACER OBJETO DE PERSONAS PARA MOSTRAR MULTIPLES OPINIONES Y COLOCAR SVG DE ESTRELLAS*/}
                         <div className="container-card-burger">
                             <picture>
-                                <img src={burgericon} alt="" />
+                                <source srcSet={burgericonw} type='image/webp' />
+                                <img src={burgericon} alt="icono burger" />
                             </picture>
                         </div>
                         <div className="opinion-photo">
                             <picture>
+                                <source srcSet={dataPersonas.imgPersonaw} type='image/webp' />
                                 <img src={persona.imgPersona} alt="imagen persona" />
                             </picture>
                         </div>

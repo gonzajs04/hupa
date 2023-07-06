@@ -10,7 +10,7 @@ export default function Socials() {
             <div className="socials-images-text">
                 <div className="socials-fila primera">
                     <div className="social-image">
-                        <a href="www.instagram.com/hupahamburguesas/">
+                        <a href="https://www.instagram.com/hupahamburguesas/">
                             <picture>
                                 <img src={socialmedia1} alt="socialimage1" />
                             </picture>
@@ -26,7 +26,7 @@ export default function Socials() {
                     </div>
 
                     <div className="social-image">
-                        <a href="www.facebook.com/hupahamburguesas/">
+                        <a href="https://www.facebook.com/hupahamburguesas/">
                             <picture>
                                 <img src={socialmedia2} alt="socialimage1" />
                             </picture>
@@ -40,7 +40,7 @@ export default function Socials() {
 
                 <div className="socials-fila">
                     <div className="social-image">
-                        <a href="www.tiktok.com/@hupa_hamburguesas">
+                        <a href="https://www.tiktok.com/@hupa_hamburguesas">
                             <picture>
                                 <img src={socialmedia3} alt="socialimage1" />
                             </picture>
@@ -51,7 +51,7 @@ export default function Socials() {
                     </div>
 
                     <div className="social-image">
-                        <a href="www.linktr.ee/hupahamburguesas">
+                        <a href="https://www.linktr.ee/hupahamburguesas">
                             <picture>
                                 <img src={socialmedia4} alt="socialimage1" />
                             </picture>
@@ -62,7 +62,7 @@ export default function Socials() {
                     </div>
 
                     <div className="social-image">
-                        <a href="www.twitter.com/hupahamburguesas/">
+                        <a href="https://www.twitter.com/hupahamburguesas/">
                             <picture>
                                 <img src={socialmedia5} alt="socialimage1" />
                             </picture>

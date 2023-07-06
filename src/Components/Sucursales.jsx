@@ -34,8 +34,8 @@ export default function Sucursales() {
                         
                         <picture>
 
-                            {/* <source srcset=".webp" type="image/webp" /> */}
-                            <source srcset={horario.imgC} type='image/webp' />
+                            {/* <source srcSet=".webp" type="image/webp" /> */}
+                            <source srcSet={horario.imgC} type='image/webp' />
                             <img loading="lazy" src={horario.img} alt="horarioimg" />
 
                         </picture>

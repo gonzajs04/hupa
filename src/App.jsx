@@ -14,16 +14,17 @@ const Pedidos = lazy(() => import('./Components/Pedidos'))
 import DeliveryModal from './Components/DeliveryModal';
 
 import persona from './images/persona.jpg'
+import personaw from './images/compressed/personaw.webp'
 export default function App() {
     const [categorias, setCategorias] = useState(["Comida", "Atencion", "Servicios", "Precios", "Lugar", "Comodidad", "Otros"])
 
     const [dataPersonas, setDataPersonas] = useState([
-        { id: generarKey(), categoria: categorias[0], nombre: "Jose", descripcion: "Muy rica comida, la verdad una de las mejores que probe en mi vida", estrellas: "sabroso", imgPersona: persona },
-        { id: generarKey(), categoria: categorias[0], nombre: "Maria", descripcion: "Las mejores hamburgesas, y las papas, una joya, recomiendo 100%", estrellas: "Lo mejor", imgPersona: persona },
+        { id: generarKey(), categoria: categorias[0], nombre: "Jose", descripcion: "Muy rica comida, la verdad una de las mejores que probe en mi vida", estrellas: "sabroso", imgPersona: persona,imgPersonaw: personaw },
+        { id: generarKey(), categoria: categorias[0], nombre: "Maria", descripcion: "Las mejores hamburgesas, y las papas, una joya, recomiendo 100%", estrellas: "Lo mejor", imgPersona: persona,imgPersonaw: personaw },
         { id: generarKey(), categoria: categorias[0], nombre: "Gonzalo", descripcion: "La carne, el pan, las papas, todo, es una fiesta, impresionante y economico. Muy recomendado", estrellas: "Sorprendente", imgPersona: persona },
-        { id: generarKey(), categoria: categorias[1], nombre: "Camila", descripcion: "La atencion es muy buena, excelente a decir verdad", estrellas: "Espectacular", imgPersona: persona },
+        { id: generarKey(), categoria: categorias[1], nombre: "Camila", descripcion: "La atencion es muy buena, excelente a decir verdad", estrellas: "Espectacular", imgPersona: persona,imgPersonaw: personaw },
         { id: generarKey(), categoria: categorias[0], nombre: "Gonzalo", descripcion: "La carne, el pan, las papas, todo, es una fiesta, impresionante y economico. Muy recomendado", estrellas: "Sorprendente", imgPersona: persona },
-        { id: generarKey(), categoria: categorias[1], nombre: "Camila", descripcion: "La atencion es muy buena, excelente a decir verdad", estrellas: "Espectacular", imgPersona: persona },
+        { id: generarKey(), categoria: categorias[1], nombre: "Camila", descripcion: "La atencion es muy buena, excelente a decir verdad", estrellas: "Espectacular", imgPersona: persona,imgPersonaw: personaw },
 
 
     ]);
@@ -45,8 +46,7 @@ export default function App() {
     ]);
 
     const [isOpenList, setIsOpenList] = useState(false)
-    //CONVERTIR WEBP CATEGORIAS IMAGENES: MENU_ADICIO,MENU_BURGUERS,MENU_PINTAS
-    //PONER EN COLUMNA CIRCULOS PEQUEÑOS QUE CORRESPONDAN A PEDIDOS YA, RAPPPI Y WSP EN COLUMNA QUE TENGAN BORDE GRIS SOLIDO 2 PX, Y QUE TENGA POSITION FIXED PARA QUE ABARAQUE TODA LA PANTALLA AL ARRASTRAR
+    //CONVERTIR WEBP Imagenes restantes, desde 
 
 
     return (

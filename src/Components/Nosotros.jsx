@@ -48,7 +48,7 @@ export default function Nosotros() {
 
             <div className="contenedor-imagen-nosotros">
                 <picture>
-                    <source srcset={nosotrosimgw} type='image/webp' />
+                    <source srcSet={nosotrosimgw} type='image/webp' />
                     <img src={nosotrosimg} loading='lazy' alt="Imagen nosotros" />
                 </picture>
 

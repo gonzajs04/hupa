@@ -32,7 +32,7 @@ export default function Categorias() {
                     <div className="categoria" key={index}>
                         <div className="categoria-img">
                             <picture>
-                                <source srcset={categoria.imgCategoriaw} type='image/webp' />
+                                <source srcSet={categoria.imgCategoriaw} type='image/webp' />
                                 <img loading="lazy" src={categoria.imgCategoria} alt="Imagen categoria" />
 
                             </picture>
@@ -41,7 +41,7 @@ export default function Categorias() {
                         <div className="nombre-button">
                             <div className="icon-categoria">
                                 <picture>
-                                <source srcset={categoria.iconW} type='image/webp' />
+                                <source srcSet={categoria.iconW} type='image/webp' />
                                     <img loading="lazy" src={categoria.icon} alt="icono" /> {/*COMPRIMIRLA Y HACERLA WEBP */}
                                 </picture>
 
