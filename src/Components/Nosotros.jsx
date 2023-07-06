@@ -2,6 +2,7 @@ import friesicon from '../images/icons/friesicon.png';
 import nosotrosimg from '../images/nosotrosimg.jpg';
 import nosotrosimgw from '../images/nosotrosimg.jpg';
 import nosotrosimg3 from '../images/nosotros2.jpg';
+import nosotrosimg3w from '../images/compressed/nosotros2w.webp';
 
 export default function Nosotros() {
     return (
@@ -61,6 +62,7 @@ export default function Nosotros() {
 
                     <div className="img-nosotros img2">
                         <picture>
+                            <source srcSet={nosotrosimg3w} type='image/webp' />
                             <img src={nosotrosimg3} alt="nosotros img 2" />
                         </picture>
                     </div>
