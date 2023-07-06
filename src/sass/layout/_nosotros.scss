@@ -3,18 +3,23 @@
     padding: 0;
     background-color: #BE4884;
     position: relative;
-    row-gap: 5rem;
+    row-gap: 4rem;
     display: grid;
     @include m.desktopXL{
         padding: 4rem 0;
 
-        grid-template-columns: 1.1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         place-items: center;
     }
  
 }
 .contenedor-nosotros{
-    padding: 4rem 0;
+    padding: 2rem 0;
+
+    @include m.desktopXL{
+        padding: 4rem 0;
+
+    }
   
     height: 100%;
     width: 100%;
@@ -41,9 +46,11 @@
         position: relative;
         z-index: 1000000;
         h2{
+            text-align: center;
             font-size: 1.8rem;
             @include m.tablet{
                 font-size: 3rem;
+                text-align: left;
 
             }
          
@@ -53,6 +60,10 @@
     }
     .nosotros-parrafos{
         max-width: 600px;
+        padding: 0 1rem;
+        @include m.tablet{
+            padding: 0;
+        }
     }
 
     .parrafo-nosotros{
@@ -132,6 +143,73 @@
     transform: rotate(-50deg);
 }
 .contenedor-imagen-nosotros{
+
+
+   
+    .imagenes-nosotros{
+        position: relative;
+        max-width: 100%;
+        max-height: 300px;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+        right: 0%;
+        .img-nosotros{
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        .img-nosotros{
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        @include m.desktopXL{
+            overflow: visible;
+            max-width: 800px;
+
+            max-height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+            max-width: 800px;
+
+            right: -1%;
+
+            .img-nosotros{
+                position: relative;
+               
+              
+                width: 400px;
+                height: 400px;
+                &.img1{
+                    position: absolute;
+                    right: 40%;
+                    bottom: -6%;
+                    z-index: 1000000;
+                }
+                &.img2{
+                    position: absolute;
+                    right: 10%;
+
+                }
+    
+            }
+
+          
+            img{
+                border-radius: 20px;
+            }
+           
+           
+        }
+       
+    }
     
     width: 100%;
     height: 100%; img{

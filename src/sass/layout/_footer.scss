@@ -1,3 +1,4 @@
+@use '../globales/mixins' as m;
 .footer{
     position: relative;
     padding: 8rem 0;
@@ -6,10 +7,15 @@
     .img-footer{
         margin: 0 auto;
         filter: drop-shadow(2px 1px .3px rgb(201, 108, 1));
+        width: 200px;
 
-        width: 300px;
         animation: titilar 10s linear infinite;
 
+
+        @include m.tablet{
+            width: 300px;
+
+        }
     }
 
     .text-footer{
@@ -21,23 +27,52 @@
             font-weight: 800;
             text-transform: uppercase;
         }
-        .p-cv{
-     
+        p:first-child{
             font-size: .8rem;
+            @include m.tablet{
+                font-size: .9rem;
+                
+            }
+        }
+        .p-cv{
+            font-size: .7rem;
+
             margin: 0;
-            font-weight: 700;
+           
        
+            @include m.tablet{
+                font-size: .8rem;
+
+            }
         }
         p:last-child{
-            font-size: .7rem;
             position: absolute;
-            font-weight: 100;
+       
           
             bottom: 0;
             left: 0;
             right: 0;
         }
+
+        .derechos{
+            font-size: .5rem;
+            @include m.tablet{
+                font-size: .7rem;
+
+            }
+        }
       
+    }
+}
+
+.trabaja{
+    h2{
+        text-align: center;
+    }
+    @include m.tablet{
+        h2{
+            text-align: left;
+        }
     }
 }
 

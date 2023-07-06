@@ -1,6 +1,7 @@
 import friesicon from '../images/icons/friesicon.png';
 import nosotrosimg from '../images/nosotrosimg.jpg';
-import nosotrosimgw from '../images/compressed/nosotrosimgw.webp';
+import nosotrosimgw from '../images/nosotrosimg.jpg';
+import nosotrosimg3 from '../images/nosotros2.jpg';
 
 export default function Nosotros() {
     return (
@@ -47,10 +48,24 @@ export default function Nosotros() {
 
 
             <div className="contenedor-imagen-nosotros">
-                <picture>
-                    <source srcSet={nosotrosimgw} type='image/webp' />
-                    <img src={nosotrosimg} loading='lazy' alt="Imagen nosotros" />
-                </picture>
+
+                <div className="imagenes-nosotros">
+                    <div className="img-nosotros img1">
+                        <picture>
+                            <source srcSet={nosotrosimgw} type='image/webp' />
+                            <img src={nosotrosimg} loading='lazy' alt="Imagen nosotros" />
+                        </picture>
+
+                    </div>
+
+
+                    <div className="img-nosotros img2">
+                        <picture>
+                            <img src={nosotrosimg3} alt="nosotros img 2" />
+                        </picture>
+                    </div>
+                </div>
+
 
             </div>
 
