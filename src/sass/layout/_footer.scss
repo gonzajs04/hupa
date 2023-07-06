@@ -41,6 +41,20 @@
     }
 }
 
+.formas-pago{
+    position: absolute;
+    bottom: 7%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    svg{
+        margin: 0 1rem;
+        width: 48px;
+    }
+
+}
+
 
 @keyframes titilar {
     0%{
