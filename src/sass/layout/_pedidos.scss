@@ -1,0 +1,29 @@
+
+@use '../globales/mixins' as m;
+.container-imagenes-pedidos{
+    background-color: #e7e7e7;
+    display: grid;
+    @include m.desktop{
+        height: 490px;
+      
+        grid-template-columns: repeat(2,1fr);
+    }
+
+ 
+
+
+    .imagen-pedido{
+        height: 100%;
+        img{
+            
+            @include m.desktop{
+                object-fit: fill;
+
+            }
+            object-fit: cover;
+        }
+        &.pequeña{
+            height: 100%;
+        }
+    }
+}

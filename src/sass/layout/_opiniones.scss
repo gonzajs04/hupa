@@ -121,13 +121,19 @@
   width: 32px;
   height: 32px;
   position: absolute;
-  top: -5%;
-  left: -45%;
+  top: -8%;
+  left: 44%;
 
   @include m.tablet{
-    width: 56px;
-    height: 56px;
-    top: -19%;
+    width: 37px;
+    height: 37px;
+    top: -12%;
+    left: 45%;
+  }
+  @include m.desktop{
+    width: 42px;
+    height: 42px;
+    top: -12%;
     left: 43%;
   }
 

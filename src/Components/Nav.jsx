@@ -13,9 +13,9 @@ export default function Nav({isOpenList}) {
                     <Link activeClass="active" to="menu" spy={true} smooth={true} offset={50} duration={500}>Menu</Link>
                     <Link activeClass="active" to="sucursales" spy={true} smooth={true} offset={50} duration={500}>Sucursales</Link>
                     <Link activeClass="active" to="nosotros" spy={true} smooth={true} offset={50} duration={500}>Nosotros</Link>
-                    <Link activeClass="active" to="" spy={true} smooth={true} offset={50} duration={500}>Opiniones</Link>
-                    <Link activeClass="active" to="" spy={true} smooth={true} offset={50} duration={500}>Contacto</Link>
-                    <Link activeClass="active" to="" spy={true} smooth={true} offset={50} duration={500}>Puntuar</Link>
+                    <Link activeClass="active" to="opiniones" spy={true} smooth={true} offset={50} duration={500}>Opiniones</Link>
+                    <Link activeClass="active" to="socials" spy={true} smooth={true} offset={50} duration={500}>Redes Sociales</Link>
+                    <Link activeClass="active" to="trabaja" spy={true} smooth={true} offset={50} duration={500}>Empleo</Link>
 
 
                 </div>

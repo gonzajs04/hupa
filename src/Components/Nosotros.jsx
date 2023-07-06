@@ -11,12 +11,12 @@ export default function Nosotros() {
                 <div className="contenedor-texto-nosotros">
                     <div className="title-nosotros">
                         <h2>Nacimos salvajes</h2>
-                        <div className="contenedor-fries-icon">
+                        {/* <div className="contenedor-fries-icon">
                             <picture>
 
                                 <img src={friesicon} loading="lazy" alt="icono papas" />
                             </picture>
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className="nosotros-parrafos">
@@ -39,14 +39,18 @@ export default function Nosotros() {
                 </div>
 
 
-                <div className="contenedor-imagen-nosotros">
-                    <picture>
-                        <source srcset={nosotrosimgw} type='image/webp' />
-                        <img src={nosotrosimg} loading='lazy' alt="Imagen nosotros" />
-                    </picture>
 
-                </div>
 
+
+            </div>
+
+
+
+            <div className="contenedor-imagen-nosotros">
+                <picture>
+                    <source srcset={nosotrosimgw} type='image/webp' />
+                    <img src={nosotrosimg} loading='lazy' alt="Imagen nosotros" />
+                </picture>
 
             </div>
 

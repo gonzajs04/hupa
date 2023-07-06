@@ -10,7 +10,12 @@ export default function Trabaja(){
                 <p>- Envia tu CV -</p>
         <h2>¿Deseas trabajar para HUPA?</h2>
     
-        <LinkButton onClick={handleEnviarMail}>Enviar mail</LinkButton>
+        <LinkButton style={{
+            // color: "black",
+            // padding: ".7rem 1rem",
+            // border: "2px solid black"
+            
+        }} onClick={handleEnviarMail}>Enviar mail</LinkButton>
 
 
 
