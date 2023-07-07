@@ -15,16 +15,32 @@ import DeliveryModal from './Components/DeliveryModal';
 
 import persona from './images/persona.jpg'
 import personaw from './images/compressed/personaw.webp'
+
+import persona2 from './images/hombresonriendo.avif'
+
+import persona3 from './images/persona3.jpg'
+
+
+import persona4w from './images/compressed/persona4w.webp'
+
+import persona5 from './images/persona5.jpg'
+
+import persona6 from './images/persona6.jpg'
+
 export default function App() {
     const [categorias, setCategorias] = useState(["Comida", "Atencion", "Servicios", "Precios", "Lugar", "Comodidad", "Otros"])
 
     const [dataPersonas, setDataPersonas] = useState([
         { id: generarKey(), categoria: categorias[0], nombre: "Jose", descripcion: "Muy rica comida, la verdad una de las mejores que probe en mi vida", estrellas: "sabroso", imgPersona: persona,imgPersonaw: personaw },
-        { id: generarKey(), categoria: categorias[0], nombre: "Maria", descripcion: "Las mejores hamburgesas, y las papas, una joya, recomiendo 100%", estrellas: "Lo mejor", imgPersona: persona,imgPersonaw: personaw },
-        { id: generarKey(), categoria: categorias[0], nombre: "Gonzalo", descripcion: "La carne, el pan, las papas, todo, es una fiesta, impresionante y economico. Muy recomendado", estrellas: "Sorprendente", imgPersona: persona },
-        { id: generarKey(), categoria: categorias[1], nombre: "Camila", descripcion: "La atencion es muy buena, excelente a decir verdad", estrellas: "Espectacular", imgPersona: persona,imgPersonaw: personaw },
-        { id: generarKey(), categoria: categorias[0], nombre: "Martin", descripcion: "Las mejores smash burgers de toda Argentina, impresionante", estrellas: "Impresionante", imgPersona: persona },
-        { id: generarKey(), categoria: categorias[3], nombre: "Mark", descripcion: "Un lujo, impresionante los sabores, precios economicos y accesibles. La atención es muy buena y rápida ", estrellas: "Impresionante", imgPersona: persona,imgPersonaw: personaw },
+        { id: generarKey(), categoria: categorias[0], nombre: "Maria", descripcion: "Las mejores hamburgesas, y las papas, una joya, recomiendo 100%", estrellas: "Lo mejor", imgPersona: persona2,imgPersonaw: persona2 },
+
+        { id: generarKey(), categoria: categorias[0], nombre: "Gonzalo", descripcion: "La carne, el pan, las papas, todo, es una fiesta, impresionante y economico. Muy recomendado", estrellas: "Sorprendente", imgPersona: persona3 },
+        
+        { id: generarKey(), categoria: categorias[1], nombre: "Camila", descripcion: "La atencion es muy buena, excelente a decir verdad", estrellas: "Espectacular", imgPersona: persona4w,imgPersonaw: persona4w },
+
+        { id: generarKey(), categoria: categorias[0], nombre: "Martin", descripcion: "Las mejores smash burgers de toda Argentina, impresionante", estrellas: "Impresionante", imgPersona: persona5 },
+
+        { id: generarKey(), categoria: categorias[3], nombre: "Mark", descripcion: "Un lujo, impresionante los sabores, precios economicos y accesibles. La atención es muy buena y rápida ", estrellas: "Impresionante", imgPersona: persona6,imgPersonaw: personaw },
 
 
     ]);
