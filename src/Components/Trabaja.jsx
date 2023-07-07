@@ -1,25 +1,15 @@
-import { LinkButton } from "../StyledComponents/LinkButton"
-export default function Trabaja(){
+import { Button } from "../StyledComponents/Button"
+export default function Trabaja() {
 
-    function handleEnviarMail(e){
+    function handleEnviarMail(e) {
         e.preventDefault()
         window.location.href = "mailto:hupafabrica@gmail.com?subject=Trabaja para nosotros | Enviar CV"
     }
-    return(
+    return (
         <section className="trabaja">
-                <p>- Envia tu CV -</p>
-        <h2>¿Deseas trabajar para HUPA?</h2>
-    
-        <LinkButton style={{
-            // color: "black",
-            // padding: ".7rem 1rem",
-            // border: "2px solid black"
-            
-        }} onClick={handleEnviarMail}>Enviar mail</LinkButton>
-
-
-
-
-    </section>
+            <p>- Envia tu CV -</p>
+            <h2>¿Deseas trabajar para HUPA?</h2>
+            <Button onClick={handleEnviarMail}>Enviar mail</Button>
+        </section>
     )
 }

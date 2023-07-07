@@ -2,6 +2,9 @@
 .footer{
     position: relative;
     padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: black;
 
     .img-footer{
@@ -77,8 +80,7 @@
 }
 
 .formas-pago{
-    position: absolute;
-    bottom: 7%;
+
     width: 100%;
     display: flex;
     flex-direction: row;

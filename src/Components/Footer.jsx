@@ -27,6 +27,7 @@ export default function Footer(){ {/*FALTA REDES SOCIALES */}
 
                 </div>
             </div>
+            <p style={{textAlign: "center", color: "white", position: "absolute", bottom: 0, textAlign: "center", opacity: ".2"}}>Gonzalo Hernandez &copy; Desarrolador Web</p>
         </footer>
     )
 }
