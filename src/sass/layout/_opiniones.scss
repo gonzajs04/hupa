@@ -1,7 +1,7 @@
 @use "../globales/mixins" as m;
 .opiniones {
   background-color: white;
-  padding: 12rem 6rem;
+  padding: 7rem 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,13 +20,45 @@
     font-weight: 600;
   }
 }
+.containerg-opiniones-ilustration{
+  display: flex;
+  flex-direction: column;
+  @include m.desktop{
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    place-items: center;
+  }
+
+
+  .container-ilustration{
+    @include m.tablet{
+      height: 400px;
+    }
+    @include m.desktop{
+      height: 450px;
+    }
+    @include m.desktopXL{
+      height: 500px;
+
+    }
+    @include m.desktopMXL{
+      height: 600px;
+    }
+    place-items: center;
+    place-content: center;
+    img{
+      object-fit: cover;
+    }
+  }
+}
 .container-opiniones {
   margin: 2rem 0;
   display: flex;
   flex-direction: column;
   @include m.desktop {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+    place-items: left;
     row-gap: 4rem;
   }
 }
@@ -93,7 +125,7 @@
       font-size: 1rem;
     }
     @include m.desktopXL {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
     }
   }
 }
