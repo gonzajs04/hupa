@@ -9,7 +9,12 @@
 .opiniones-title {
   text-align: center;
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
+
+    @include m.tablet{
+      font-size: 3rem;
+
+    }
     text-transform: uppercase;
     text-align: center;
     margin: 0;

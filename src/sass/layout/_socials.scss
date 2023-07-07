@@ -24,13 +24,21 @@
         justify-content: center;
         h2{
             font-weight: 800;
-            font-size: .8rem;
+            font-size: .6rem;
             text-align: center;
+            @include m.tablet{
+                font-size: .8rem;
+
+            }
         }
         p{
-            font-size: .5rem;
+            font-size: .4rem;
             text-align: center;
             margin: 0;
+            @include m.tablet{
+                font-size: .5rem;
+
+            }
         }
         @include m.tablet{
             h2{
