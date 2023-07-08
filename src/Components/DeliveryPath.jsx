@@ -3,12 +3,22 @@ export default function DeliveryPath({ setModal, modal }) {
     function handleModalPedidos() {
         modal === true ? setModal(false) : setModal(true);
     }
+
     return (
         <div className="path">
+
             <div className="path-icons">
 
+                <div className="pediya">
+                    <p>Pedí ya</p>
 
-                <div className="icon" onClick={handleModalPedidos }>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+                    </svg>
+
+                </div>
+
+                <div className="icon" onClick={handleModalPedidos}>
                     {!modal ? (
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-box-arrow-up-left" viewBox="0 0 16 16">
                             <path fillRule="evenodd" d="M7.364 3.5a.5.5 0 0 1 .5-.5H14.5A1.5 1.5 0 0 1 16 4.5v10a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 3 14.5V7.864a.5.5 0 1 1 1 0V14.5a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5v-10a.5.5 0 0 0-.5-.5H7.864a.5.5 0 0 1-.5-.5z" />
