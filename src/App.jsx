@@ -1,4 +1,4 @@
-import { useState, lazy, Suspense } from 'react';
+import { useState, lazy, Suspense, useEffect } from 'react';
 
 import Header from './Components/Header'
 import { generarKey } from './helpers/app.js';
@@ -65,7 +65,6 @@ export default function App() {
     ]);
 
     const [isOpenList, setIsOpenList] = useState(false)
-    //CONVERTIR WEBP Imagenes restantes, desde 
 
 
     return (

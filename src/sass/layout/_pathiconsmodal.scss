@@ -127,6 +127,7 @@
         }
     }
     a{
+        width: 100%;
         color: white;
         padding: 1rem 0;
         text-align: center;
@@ -170,6 +171,7 @@
         font-size: .8rem;
         color: white;
         font-weight: 700;
+        text-shadow: 0px 1px 6px #000000;
         @include m.tablet{
             font-size: 1.1rem;
 
