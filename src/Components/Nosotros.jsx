@@ -3,6 +3,7 @@ import nosotrosimg from '../images/nosotrosimg.jpg';
 import nosotrosimgw from '../images/nosotrosimg.jpg';
 import nosotrosimg3 from '../images/nosotros2.jpg';
 import nosotrosimg3w from '../images/compressed/nosotros2w.webp';
+import tigre from '../images/tigre.gif';
 
 export default function Nosotros() {
     return (
@@ -40,8 +41,13 @@ export default function Nosotros() {
 
                 </div>
 
-
-
+                        
+                <div className="container-tigre-gif">
+                    <div className="img-tigre">
+                    <img loading= "lazy" src={tigre} alt="gif tigre" />
+                    </div>
+                
+                </div>
 
 
             </div>

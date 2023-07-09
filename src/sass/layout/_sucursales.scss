@@ -1,5 +1,7 @@
 @use '../globales/mixins' as m;
 .sucursales{
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
     overflow: hidden;
     display: grid;
     place-items: center;

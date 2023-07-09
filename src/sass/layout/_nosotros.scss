@@ -1,5 +1,6 @@
 @use '../globales/mixins' as m;
 .nosotros{
+   overflow: hidden;
     padding: 0;
     background-color: #BE4884;
     position: relative;
@@ -14,6 +15,8 @@
  
 }
 .contenedor-nosotros{
+    overflow: hidden;
+    position: relative;
     padding: 2rem 0;
 
     @include m.desktopXL{
@@ -25,8 +28,23 @@
     width: 100%;
     background-color: #ad50b6;
 
+    .container-tigre-gif{
+        width: 100%;
+        position: absolute;
+        bottom: 1%;
+        animation: moverTigre 9s linear infinite;
+        .img-tigre{
+            width: 70px;
+  
+  
+        }
+
+      
+    }
+
 }
 .contenedor-texto-nosotros{
+    overflow: hidden;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -143,7 +161,8 @@
     transform: rotate(-50deg);
 }
 .contenedor-imagen-nosotros{
-
+    position: relative;
+    z-index: 100;
 
    
     .imagenes-nosotros{
@@ -215,5 +234,16 @@
     height: 100%; img{
         height: 100%;
         object-fit: cover;
+    }
+}
+@keyframes moverTigre {
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(100%);
     }
 }
