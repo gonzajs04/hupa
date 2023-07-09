@@ -87,7 +87,11 @@
     justify-content: center;
     svg{
         margin: 0 1rem;
-        width: 48px;
+        width: 36px;
+        @include m.tablet{
+            width: 48px;
+
+        }
     }
 
 }
