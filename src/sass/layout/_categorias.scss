@@ -34,7 +34,10 @@
     height: 100%;
     position: absolute;
     width: 100%;
- 
+    transform: translateY(-100%);
+    @include m.tablet{
+        transform: translateY(0%);
+    }
     transition: .5s all ease-in-out;
     background-color: rgba(0, 0, 0, 0.582);
 
@@ -52,10 +55,13 @@
         }
     }
 }
-.categoria:is(:hover) .nombre-button{
-    transform: translateY(-100%); 
 
+
+.categoria:is(:hover) .nombre-button{
+        transform: translateY(-100%); 
+    
 }
+
 .categoria-img{
     height: 100%;
     max-height: 350px; 

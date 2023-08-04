@@ -73,7 +73,7 @@ export default function Socials() {
                                 <img src={socialmedia4} alt="socialimage1" />
                             </picture>
                             <div className="social-panel">
-                                <p>Linktr</p>
+                                <p>Linktree</p>
                             </div>
                         </a>
                     </div>
@@ -86,7 +86,7 @@ export default function Socials() {
                                 <img src={socialmedia5} alt="socialimage1" />
                             </picture>
                             <div className="social-panel">
-                                <p>Twitter...</p>
+                                <p>Twitter</p>
                             </div>
                         </a>
                     </div>
