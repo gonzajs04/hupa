@@ -48,6 +48,7 @@
 }
 
 .container-sucursales-horarios{
+    position: relative;
     margin: 2rem 0;
     overflow: hidden;
     padding: 0 1rem;
@@ -55,9 +56,9 @@
     flex-direction: row;
    
 
-    animation: slidePhone 50s reverse infinite;
+    animation: slidePhone 50s linear infinite;
     @include m.tablet{
-        animation: slide 45s reverse infinite;
+        animation: slide 30s linear infinite;
 
     }
     .container-horario-img{
@@ -76,19 +77,14 @@
 @keyframes slide {
     0%{
        
-            transform: translateX(20%);
+            left: 133%;
      
     }
-    50%{
-
-            transform: translateX(-16%);
-     
-
-    }
+   
     100%{
 
      
-            transform: translateX(20%);
+           left: -120%;
    
 
     }
